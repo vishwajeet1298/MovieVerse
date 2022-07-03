@@ -8,8 +8,9 @@ export const SIGN_IN_BODY_TEXT={
     SIGN_UP_NOW:"SignUp Now.",
 
     SIGN_UP_TITLE: "Sign Up",
-    SIGN_UP_TEXT:"Sign UP",
+    
     ALREADY_REGISTERED:"Already Registered",
+    SIGN_UP_TEXT:"Sign UP",
 
 }
 

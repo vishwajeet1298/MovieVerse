@@ -1,11 +1,12 @@
 import React from "react";
+import HomePageContent from "../../components/HomePageContent/HomePageContent";
 import "./HomePage.css"
 
 function HomePage(){
     return(
         <div>
-zfff
+            <HomePageContent />
         </div>
-    )
+    );
 }
 export default HomePage;

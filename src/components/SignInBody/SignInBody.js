@@ -26,8 +26,8 @@ function SignInBody() {
                         <p className="signinbody_title">{SIGN_IN_BODY_TEXT.SIGN_IN_TITLE}</p>
                         <input placeholder={SIGN_IN_BODY_TEXT.EMAIL_PLACEHOLDER} type="text" />
                         <input placeholder={SIGN_IN_BODY_TEXT.PASSWORD_PLACEHOLDER} type="password" />
+                        
                         <Button text={SIGN_IN_BODY_TEXT.LOGIN_TEXT} />
-
                         <Button text={SIGN_IN_BODY_TEXT.LOGIN_AS_GUEST_USER} />
                         <p className="signinbody_text">
                             {SIGN_IN_BODY_TEXT.NEW_TO_THIS_APP}{" "}
@@ -60,7 +60,7 @@ function SignInBody() {
                 </div>
             )}
         </>
-    )
+    );
 
 }
 export default SignInBody;

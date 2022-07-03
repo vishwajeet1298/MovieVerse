@@ -1,0 +1,50 @@
+.signinbody_container{
+    display: flex;
+    align-items:center;
+    background-color: rgb(119, 119, 119); 
+    justify-content: center;
+    height: 100vh;
+}
+.signinbody_form
+{
+    display: flex;
+    flex-direction: column;
+    /* background-color:#3A7D44; */
+    background-color: #BBD2C5;
+    /* background-color: #8FBC8F; */
+    padding: 50px 40px;
+}
+.signinbody_title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+}
+.signinbody_form >input, .signinbody_form>button{
+    margin: 18px 0;
+}
+.signinbody_form > input{
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    padding:  0 10px;
+    width: 300px;
+    background-color: lightgray;
+}
+.signinbody_form>button{
+    height: 30px;
+    background-color: #181818;
+    font-weight: 700;
+    color: wheat;
+    cursor: pointer;
+}
+.signinbody_text{
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    color:darkslategray;
+}
+.signinbody_text>span{
+    color: black;
+    font-weight: 700;
+    cursor: pointer;
+}

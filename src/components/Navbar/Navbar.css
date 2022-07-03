@@ -1,0 +1,17 @@
+.navbar_container{
+    /* background-color: #3A7D44; */
+    /* background-color: #8FBC8F; */
+    /* background-color: #536976; */
+    background-color: #334d50;
+
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0 5%;
+    border-bottom: 1px solid #ADD8e6;
+
+
+}
+.navbar_logo{
+    width: 50px;
+}

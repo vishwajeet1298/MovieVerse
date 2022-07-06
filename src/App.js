@@ -11,13 +11,13 @@ import HomePage from './container/HomePage/HomePage';
 
 function App() {
 
-  const isUserLoggedIn=false;
+  const isUserLoggedIn=true;
   return (
 
     <BrowserRouter>
      <div className="App">
       <Routes>
-        <Route path="/" element={isUserLoggedIn ? <HomePage/> : <LandingPage />} />
+        <Route path="/" element={isUserLoggedIn ? <HomePage /> : <LandingPage />} />
         <Route path="/sign-in" element={<SignIn />}  />
       </Routes>
       </div>

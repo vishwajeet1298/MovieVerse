@@ -17,6 +17,8 @@ function Row({rowTitle, moviesArray, posterPath}) {
 
                             alt={`${rowTitle}Img`}
                         />
+                            <p className="movie_title">{value.title}</p>
+                            
 
                     </div>
                 ))}

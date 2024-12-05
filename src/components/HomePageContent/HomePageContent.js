@@ -13,11 +13,13 @@ function HomePageContent() {
   const [topRatedMovies, setTopRatedMovies] = useState([])
   const [popularMovies, setPopularMovies] = useState([])
   const [nowPlayingMovies, setNowPlayingMovies] = useState([])
+  const [upcomingMovies, setUpcomingMovies]=useState([])
 
 
   const topRatedMoviesApiUrl = `${BASE_URL}/movie/top_rated?api_key=${API_KEY}`;
   const popularMoviesApiUrl = `${BASE_URL}/movie/popular?api_key=${API_KEY}`;
   const nowPlayingMoviesApiUrl = `${BASE_URL}/movie/now_playing?api_key=${API_KEY}`;
+   const upcomingMoviesApiUrl=`${BASE_URL}/movie/upcoming?api_key=${API_KEY}`;
 
   // function fetchTopRatedMovies() {
   //   fetch(`${BASE_URL}/movie/top_rated?api_key=${API_KEY}`)
@@ -54,6 +56,7 @@ function HomePageContent() {
     callApi(topRatedMoviesApiUrl, setTopRatedMovies);
     callApi(popularMoviesApiUrl, setPopularMovies);
     callApi(nowPlayingMoviesApiUrl, setNowPlayingMovies);
+    callApi(upcomingMoviesApiUrl,setUpcomingMovies);
 
 
   }, [])
@@ -62,6 +65,13 @@ function HomePageContent() {
 
     <div className="homepagecontent_container">
       {/* if there is no such array or length is zero  */}
+  {upcomingMovies.length>0 && (
+        <Row
+        rowTitle="Upcoming Movies"
+        moviesArray={upcomingMovies}
+        posterPath={true}
+      />)}
+  
       {topRatedMovies.length >0 && (
         <Row
         rowTitle="Top Rated Movies"

@@ -12,7 +12,6 @@ function SignIn({setIsUserLoggedIn}){
         <div>
             <Navbar showSignInButton={false}  />
             <SignInBody  setIsUserLoggedIn={setIsUserLoggedIn}/>
-            
         </div>
     );
 }
